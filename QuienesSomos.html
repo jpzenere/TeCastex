@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="shortcut icon" href="Icons/favicon.ico" type="image/x-icon"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Té Castex!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f56b239c28.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div><a href="index.html"><img src="img/Logo.png" alt="logo" id="LogoHome"></a></div>
+            <div class="Directorio">
+                <a class= "Directorio_buttons" href="SobreTe.html">Sobre el Té</a>
+                <a class= "Directorio_buttons" href="Productos.html">Productos</a>
+                <a class= "Directorio_buttons" href="QuienesSomos.html">Quienes somos</a>
+            </div>
+        </nav>
+        <div class="espaciador"></div>
+    </header>
+    <main>
+        <h1 style="font-size: 2.5em;">Quiénes somos</h1>
+        <div class="quienes">
+            <section class="descript">
+                <p class="somos">Té Castex! es un rincón donde compartir la afición con todos los amantes de esta bebida milenaria, 
+                    y sobre todo, un lugar desde el que sumar a muchas personas a un estilo de vida más calmado, consciente y 
+                    lleno de momentos de disfrute alrededor del té.
+                </p>
+                <p class="somos">En nuestra tienda se mezcla nuestro conocimiento sobre el té y la pasión por enseñarles a las 
+                    personas esta corriente y estilo de vida. Entendemos que el hábito de tomar té diariamente es una práctica, 
+                    y no existe una sola forma de incorporarla a nuestras vidas. Nos encanta conocer a nuestros clientes y clientas, 
+                    y recomentarles las variedades de té que más encajan con su día a día. Pero lo que realmente nos reconforta es 
+                    ver como cada persona adapta el té a su vida de un modo distinto y se convierte en algo especial para ellas. 
+                </p>
+                <p class="somos">En esta aventura somos un equipo de cinco personas, en constante crecimiento, apasionadas por la 
+                    cultura del té y todo lo que puede aportar a nuestras vidas. Desde nuestra tienda de té en Buenos Aires, 
+                    nuestra tienda física (ubicada en la calle Castex 3372) y nuestra tienda <a href="Productos.html">online</a> de té trabajamos para 
+                    asesorarte y ayudarte para que puedas incorporar y disfrutar del té en tu día a día de una forma personalizada. 
+                </p>
+                <p class="somos">Estamos deseando conocerte, responder a todas tus dudas e inquietudes y recomendarte 
+                    las variedades de té que más se adapten a tus gustos: sabor, aroma, intensidad… 
+                </p>
+                <h3>Te esperamos!</h3>
+            </section>
+            <div class="espaciador"><a name="consulta"></a></div>
+            <div class="form_iframe_container">                
+                <section class="form_container">
+                    <h2>Hacenos tu consulta</h2>                    
+                    <form class="form_quienes" action="https://formspree.io/f/xpzbjlpk" method="POST">
+                        <div class="imp_container">                            
+                            <label><span class="span_imp">Nombre:</span>
+                                <input class="imp" type="text" name="nombre" autocapitalize="words" required>
+                            </label>
+                        </div>
+                        <div class="imp_container">
+                            <label><span class="span_imp">Apellido:</span>
+                                <input class="imp" type="text" name="apellido" autocapitalize="words" required>
+                            </label>
+                        </div>
+                        <div class="imp_container">
+                            <label><span class="span_imp">E-mail:</span>
+                                <input class="imp" type="email" name="email" placeholder="Ingresá tu E-mail" required>
+                            </label>
+                        </div>
+                        <div class="imp_container">
+                            <label><span class="span_imp">Quiero suscribirme al newsletter:</span>
+                                <input class="imp" type="checkbox" name="newsletter" value="Suscripto">
+                            </label>
+                        </div>
+                        <div class="imp_container">
+                            <label><span class="span_imp">Mensaje:</span>
+                                <textarea class="imp" name="message" placeholder="Escribinos tu mensaje" rows="5" cols="30" autocapitalize="sentences"></textarea>
+                            </label>
+                        </div>
+                        <div class="button_container">
+                            <button type="submit" class="imp_button"><span class="span_imp">Enviar</span>
+                            </button>
+                        </div>
+                        <div class="button_container">
+                            <button type="reset" class="imp_button"><span class="span_imp">Borrar</span>
+                            </button>
+                        </div> 
+                    </form>
+                </section>    
+                <section>
+                    <h2>Dónde estamos</h2>
+                    <iframe class="iframe_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.031879629244!2d-58.406924879316634!3d-34.57805989297877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb564cb0fedb3%3A0x52d02c41e30651fe!2sCastex%203372%2C%20C1425%20CDF%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1648603163731!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p class="contacto">Castex 3372, C1425, Ciudad Autónoma de Buenos Aires<br>Teléfono: (011) 43413079<br>
+                    e-mail: <a type="email" href="mailto:info@tecastex.com.ar"><i>info@tecastex.com.ar</i> </p></a></p>
+                </section>
+            </div>
+        </div>
+        <div class="espaciador"></div>
+    </main>
+    <footer>
+        <div class="socialmediaicon">
+            <a href="https://www.instagram.com" class="socialmedia" target="_blanc"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com" class="socialmedia" target="_blanc"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com" class="socialmedia" target="_blanc"><i class="fa-brands fa-twitter"></i></a>
+        </div>  
+        <div class="poweredby">
+            <p>Desarrollado por: <a type="email" href="mailto:jpzenere@gmail.com"><i>Juan Panozzo Zénere</i> </p></a>
+        </div>
+    </footer>
+</body>
+</html>
