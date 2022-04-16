@@ -26,19 +26,20 @@
         <section class="TeTipos">
             <h2 class="Tipos"><a name="Tenegro">Te Negro</a></h2>
             <div class="prod_container">
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/Assam.jpg" alt="Assam Tea">
-                        <h3 class="item_name">Assam</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Té Negro de hoja partida y brotes dorados de sabor intenso. 
-                            Especialmente astringente, ideal para los amantes del té con leche.</p>
-                        <p class="precio">$2500</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
+                <script>
+                    function item(imagen,name,descr,prec) {
+                        let card = '<div class="item_container"><div class="item"><img class="item_image" src="'+imagen+'" alt="Tea"><h3 class="item_name">'+name+'</h3></div><div class="itemhidden"><p class="item_description">'+descr+'</p><p class="precio">'+prec+'</p><div><a class="item_button" href="Carrito.html">Comprar</a></div><div class="arrow"><i class="fa-solid fa-chevron-down"></i></div></div></div>'
+                        document.write(card)
+                    }
+                    let Assam = [
+                        "img/Productos/Assam.jpg",
+                        "Assam",
+                        "Té Negro de hoja partida y brotes dorados de sabor intenso. Especialmente astringente, ideal para los amantes del té con leche.",
+                        "$2500"
+                        ]
+                    item(Assam[0],Assam[1],Assam[2],Assam[3])
+                </script>
+               
                 <div class="item_container">
                     <div class="item">
                         <img class="item_image" src="img/Productos/Ceylon.jpg" alt="Ceylon Tea">
