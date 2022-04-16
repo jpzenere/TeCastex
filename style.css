@@ -537,7 +537,8 @@ footer a:hover {
 }
 
 .imp{
-    width: 70vw
+    width: 70vw;
+    border: none
 }
 
 .span_imp{
@@ -1017,7 +1018,7 @@ footer a:hover {
     }
 
     .itemhidden p {
-        font-size: 1.05em;
+        font-size: 1.3em;
         padding: 5px 30px;
     }
 
@@ -1058,6 +1059,10 @@ footer a:hover {
         width: 80vw;
         justify-content: space-around; 
         max-width: 1400px;
+    }
+
+    .imp {
+        font-size: 1em;
     }
 
 
