@@ -28,81 +28,49 @@
             <div class="prod_container">
                 <script>
                     function item(imagen,name,descr,prec) {
-                        let card = '<div class="item_container"><div class="item"><img class="item_image" src="'+imagen+'" alt="Tea"><h3 class="item_name">'+name+'</h3></div><div class="itemhidden"><p class="item_description">'+descr+'</p><p class="precio">'+prec+'</p><div><a class="item_button" href="Carrito.html">Comprar</a></div><div class="arrow"><i class="fa-solid fa-chevron-down"></i></div></div></div>'
+                        let card = `<div class="item_container">
+                                        <div class="item">
+                                            <img class="item_image" src="`+imagen+`">
+                                            <h3 class="item_name">`+name+`</h3></div>
+                                        <div class="itemhidden">
+                                            <p class="item_description">`+descr+`</p>
+                                            <p class="precio">`+prec+`</p>
+                                            <div><a class="item_button" href="Carrito.html">Comprar</a></div>
+                                            <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
+                                        </div>
+                                    </div>`
                         document.write(card)
                     }
-                    let Assam = [
-                        "img/Productos/Assam.jpg",
+                    item("img/Productos/Assam.jpg",
                         "Assam",
                         "Té Negro de hoja partida y brotes dorados de sabor intenso. Especialmente astringente, ideal para los amantes del té con leche.",
-                        "$2500"
-                        ]
-                    item(Assam[0],Assam[1],Assam[2],Assam[3])
-                </script>
-               
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/Ceylon.jpg" alt="Ceylon Tea">
-                        <h3 class="item_name">Ceylon</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Destaca por su ser exótico y aromático, con un toque rojizo. 
-                            Sabor meloso y carácter amaderado. Té energizante y estimulante.</p>
-                        <p class="precio">$3000</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/Darjeeling.jpg" alt="Darjeeling Tea">
-                        <h3 class="item_name">Darjeeling</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Procedente de la región india de Darjeeling. Alta calidad.
-                            Ligero y sedoso con pequeño toque herbal.</p>
-                        <p class="precio">$3200</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/EnglishBreakfast.jpg" alt="English Breakfast">
-                        <h3 class="item_name">English<br> Breakfast</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Tradicional mezcla de Tés Negros de Sri Lanka para empezar el día con vitalidad. 
-                            Unas gotas de leche matizarán la astringencia y aportarán cremosidad.</p>
-                        <p class="precio">$1300</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/IrishBreakfast.jpg" alt="Irish Breakfast">
-                        <h3 class="item_name">Irish Breakfast</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Tradicional mezcla de Tés Negros de Assam (India) de consistente textura e intensa astringencia. </p>
-                        <p class="precio">$1300</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/Lapsang.jpg" alt="Lapsang Souchong">
-                        <h3 class="item_name">Lapsang Souchong</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Té Negro de Taiwan de intenso dulzor y sequedad ahumada para disfrutar de una experiencia aromática.</p>
-                        <p class="precio">$2100</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
+                        "$2500")
+
+                    item("img/Productos/Ceylon.jpg",
+                        "Ceylon",
+                        "Destaca por su ser exótico y aromático, con un toque rojizo. Sabor meloso y carácter amaderado. Té energizante y estimulante.",
+                        "$3000")
+                    
+                    item("img/Productos/Darjeeling.jpg",
+                        "Darjeeling",
+                        "Procedente de la región india de Darjeeling. Alta calidad. Ligero y sedoso con pequeño toque herbal.",
+                        "$3200")
+                    
+                    item("img/Productos/EnglishBreakfast.jpg",
+                        "English<br> Breakfast",
+                        "Tradicional mezcla de Tés Negros de Sri Lanka para empezar el día con vitalidad. Unas gotas de leche matizarán la astringencia y aportarán cremosidad.",
+                        "$1300")
+
+                    item("img/Productos/IrishBreakfast.jpg",
+                        "Irish Breakfast",
+                        "Tradicional mezcla de Tés Negros de Assam (India) de consistente textura e intensa astringencia.",
+                        "$1300")
+                    
+                    item("img/Productos/Lapsang.jpg",
+                        "Lapsang Souchong",
+                        "Té Negro de Taiwan de intenso dulzor y sequedad ahumada para disfrutar de una experiencia aromática.",
+                        "$2100")
+                </script>                
             </div>
             <div class="espaciador"></div>                
     
@@ -110,18 +78,16 @@
         <section class="TeTipos">
             <h2 class="Tipos"><a name="Teverde">Te Verde</a></h2>
             <div class="prod_container">
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/Sencha.jpg" alt="Sencha">
-                        <h3 class="item_name">Sencha</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Té verde en hebras que se elabora sin triturar las hojas. Se caracteriza por su sabor intenso y aroma fresco.</p>
-                        <p class="precio">$2500</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
+                <script>
+                    item("img/Productos/Sencha.jpg",
+                        "Sencha",
+                        "Té verde en hebras que se elabora sin triturar las hojas. Se caracteriza por su sabor intenso y aroma fresco.",
+                        "$2500")
+
+
+
+                </script>
+                
                 <div class="item_container">
                     <div class="item">
                         <img class="item_image" src="img/Productos/Gunpowder.jpg" alt="Gunpowder">
