@@ -8,7 +8,7 @@
     <title>Té Castex!</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f56b239c28.js" crossorigin="anonymous"></script>
-
+    <script src="Library.js"></script>
 </head>
 <body>
     <header>
@@ -26,82 +26,37 @@
         <section class="TeTipos">
             <h2 class="Tipos"><a name="Tenegro">Te Negro</a></h2>
             <div class="prod_container">
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/Assam.jpg" alt="Assam Tea">
-                        <h3 class="item_name">Assam</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Té Negro de hoja partida y brotes dorados de sabor intenso. 
-                            Especialmente astringente, ideal para los amantes del té con leche.</p>
-                        <p class="precio">$2500</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/Ceylon.jpg" alt="Ceylon Tea">
-                        <h3 class="item_name">Ceylon</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Destaca por su ser exótico y aromático, con un toque rojizo. 
-                            Sabor meloso y carácter amaderado. Té energizante y estimulante.</p>
-                        <p class="precio">$3000</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/Darjeeling.jpg" alt="Darjeeling Tea">
-                        <h3 class="item_name">Darjeeling</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Procedente de la región india de Darjeeling. Alta calidad.
-                            Ligero y sedoso con pequeño toque herbal.</p>
-                        <p class="precio">$3200</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/EnglishBreakfast.jpg" alt="English Breakfast">
-                        <h3 class="item_name">English<br> Breakfast</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Tradicional mezcla de Tés Negros de Sri Lanka para empezar el día con vitalidad. 
-                            Unas gotas de leche matizarán la astringencia y aportarán cremosidad.</p>
-                        <p class="precio">$1300</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/IrishBreakfast.jpg" alt="Irish Breakfast">
-                        <h3 class="item_name">Irish Breakfast</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Tradicional mezcla de Tés Negros de Assam (India) de consistente textura e intensa astringencia. </p>
-                        <p class="precio">$1300</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/Lapsang.jpg" alt="Lapsang Souchong">
-                        <h3 class="item_name">Lapsang Souchong</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Té Negro de Taiwan de intenso dulzor y sequedad ahumada para disfrutar de una experiencia aromática.</p>
-                        <p class="precio">$2100</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
+                <script>                    
+                    item("img/Productos/Assam.jpg",
+                        "Assam",
+                        "Té Negro de hoja partida y brotes dorados de sabor intenso. Especialmente astringente, ideal para los amantes del té con leche.",
+                        "$2500")
+
+                    item("img/Productos/Ceylon.jpg",
+                        "Ceylon",
+                        "Destaca por su ser exótico y aromático, con un toque rojizo. Sabor meloso y carácter amaderado. Té energizante y estimulante.",
+                        "$3000")
+                    
+                    item("img/Productos/Darjeeling.jpg",
+                        "Darjeeling",
+                        "Procedente de la región india de Darjeeling. Alta calidad. Ligero y sedoso con pequeño toque herbal.",
+                        "$3200")
+                    
+                    item("img/Productos/EnglishBreakfast.jpg",
+                        "English<br> Breakfast",
+                        "Tradicional mezcla de Tés Negros de Sri Lanka para empezar el día con vitalidad. Unas gotas de leche matizarán la astringencia y aportarán cremosidad.",
+                        "$1300")
+
+                    item("img/Productos/IrishBreakfast.jpg",
+                        "Irish Breakfast",
+                        "Tradicional mezcla de Tés Negros de Assam (India) de consistente textura e intensa astringencia.",
+                        "$1300")
+                    
+                    item("img/Productos/Lapsang.jpg",
+                        "Lapsang Souchong",
+                        "Té Negro de Taiwan de intenso dulzor y sequedad ahumada para disfrutar de una experiencia aromática.",
+                        "$2100")
+                </script>                
             </div>
             <div class="espaciador"></div>                
     
@@ -109,81 +64,37 @@
         <section class="TeTipos">
             <h2 class="Tipos"><a name="Teverde">Te Verde</a></h2>
             <div class="prod_container">
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/Sencha.jpg" alt="Sencha">
-                        <h3 class="item_name">Sencha</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Té verde en hebras que se elabora sin triturar las hojas. Se caracteriza por su sabor intenso y aroma fresco.</p>
-                        <p class="precio">$2500</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/Gunpowder.jpg" alt="Gunpowder">
-                        <h3 class="item_name">Gunpowder</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Proviene de la provincia de Zhejiang, China. Sus hojas son delicadamente enrrolladas como bolitas 
-                            siguiendo la tradición que le da su nombre. Es de sabor audaz y tiene un leve dejo ahumado.</p>
-                        <p class="precio">$2800</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/MatchaPowder.jpg" alt="Matcha">
-                        <h3 class="item_name">Matcha</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Es el punto principal de la Ceremonia de Té Japonesa. Se trata de hojas de té verde pulverizadas para obtener un polvo fino. 
-                            Sólo las hojas más finas y tiernas se utilizan para su creación</p>
-                        <p class="precio">$3200</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/JasmineGreen.jpg" alt="Jasmine Green Tea">
-                        <h3 class="item_name">Jasmine<br>Green Tea</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Una infusión relajante y meditativa de té verde con fragantes y dulces pétalos de jazmín. 
-                            El licor producido por esta combinación es suave y muy floral.</p>
-                        <p class="precio">$1300</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/LemonGreen.jpg" alt="Lemon Green tea">
-                        <h3 class="item_name">Lemon<br>Green Tea</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Una mezcla perfecta entre la suavidad y delicadeza del té verde junto con la acidez refrescante del limón.</p>
-                        <p class="precio">$1300</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/GingerMint.jpg" alt="Mint and Ginger">
-                        <h3 class="item_name">Mint and Ginger<br>Green Tea</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Tónico de menta y gengibre con una base de té verde sumamente fresca y relajante.</p>
-                        <p class="precio">$1300</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
+                <script>
+                    item("img/Productos/Sencha.jpg",
+                        "Sencha",
+                        "Té verde en hebras que se elabora sin triturar las hojas. Se caracteriza por su sabor intenso y aroma fresco.",
+                        "$2500")
+
+                    item("img/Productos/Gunpowder.jpg",
+                        "Gunpowder",
+                        "Proviene de la provincia de Zhejiang, China. Sus hojas son delicadamente enrrolladas como bolitas siguiendo la tradición que le da su nombre. Es de sabor audaz y tiene un leve dejo ahumado.",
+                        "$2800")
+
+                    item("img/Productos/MatchaPowder.jpg",
+                        "Matcha",
+                        "Es el punto principal de la Ceremonia de Té Japonesa. Se trata de hojas de té verde pulverizadas para obtener un polvo fino. Sólo las hojas más finas y tiernas se utilizan para su creación",
+                        "$3200")
+
+                    item("img/Productos/JasmineGreen.jpg",
+                        "Jasmine<br>Green Tea",
+                        "Una infusión relajante y meditativa de té verde con fragantes y dulces pétalos de jazmín. El licor producido por esta combinación es suave y muy floral.",
+                        "$1800")
+
+                    item("img/Productos/LemonGreen.jpg",
+                        "Lemon<br>Green Tea",
+                        "Una mezcla perfecta entre la suavidad y delicadeza del té verde junto con la acidez refrescante del limón.",
+                        "$1800")
+
+                    item("img/Productos/GingerMint.jpg",
+                        "Mint and Ginger<br>Green Tea",
+                        "Tónico de menta y gengibre con una base de té verde sumamente fresca y relajante.",
+                        "$1800")
+                </script>                                        
             </div>
             <div class="espaciador"></div>                
                 
@@ -191,58 +102,27 @@
         <section class="TeTipos">
             <h2 class="Tipos"><a name="Espaciales">Especiales</a></h2>
             <div class="prod_container">
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/EarlGrey.jpg" alt="Earl Grey">
-                        <h3 class="item_name">Earl Grey</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Té negro de sabor intenso aromatizado con aceites esenciales de bergamota que le proporciona su sabor y aromas cítrico. 
-                            Uno de los favoritos para el High Tea dado que es ideal para acompañarlo con dulces.  
-                        </p>
-                        <p class="precio">$1800</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/LemonTea.jpg" alt="Lemon Tea">
-                        <h3 class="item_name">Lemon Tea</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Pocos sabores se combinan tan bien como el limón ácido y el audaz té negro. Es la opción ideal para tomarlo helado en las tardes de verano.</p>
-                        <p class="precio">$1500</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/Masala Chai.jpg" alt="Masala Chai">
-                        <h3 class="item_name">Masala Chai</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Es un té típico de la India, preparado con té negro de Assam y una mezcla de especias tradicional que le dan una calidez y un cuerpo redondo.
-                            Acompañarlo con leche para vivir la experiencia completa. 
-                        </p>
-                        <p class="precio">$2500</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/Rooibos.jpg" alt="Rooibos">
-                        <h3 class="item_name">Rooibos</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Infusión de origen sudafricano, fresca y aromática. De sabor agradable, se puede consumir, solo o blendear con flores.</p>
-                        <p class="precio">$2100</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
+                <script>
+                    item("img/Productos/EarlGrey.jpg",
+                        "Earl Grey",
+                        "Té negro de sabor intenso aromatizado con aceites esenciales de bergamota que le proporciona su sabor y aromas cítrico. Uno de los favoritos para el High Tea dado que es ideal para acompañarlo con dulces.",
+                        "$1800")
+
+                    item("img/Productos/LemonTea.jpg",
+                        "Lemon Tea",
+                        "Pocos sabores se combinan tan bien como el limón ácido y el audaz té negro. Es la opción ideal para tomarlo helado en las tardes de verano.",
+                        "$1500")
+
+                    item("img/Productos/Masala Chai.jpg",
+                        "Masala Chai",
+                        "Es un té típico de la India, preparado con té negro de Assam y una mezcla de especias tradicional que le dan una calidez y un cuerpo redondo. Acompañarlo con leche para vivir la experiencia completa.",
+                        "$2500")
+
+                    item("img/Productos/Rooibos.jpg",
+                        "Rooibos",
+                        "Infusión de origen sudafricano, fresca y aromática. De sabor agradable, se puede consumir, solo o blendear con flores.",
+                        "$2100")
+                </script>            
             </div>
             <div class="espaciador"></div> 
     
@@ -250,95 +130,42 @@
         <section class="TeTipos">            
             <h2 class="Tipos"><a name="Infusiones">Infusiones</a></h2>
             <div class="prod_container">
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/Menta.jpg" alt="Menta Peperina">
-                        <h3 class="item_name">Menta<br>Piperina</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Mejorar la digestión y disminuir las náuseas son algunas de las bondades que se le atribuyen a esta especia familiar de la hierbabuena.</p>
-                        <p class="precio">$1800</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/Rosa.jpg" alt="Rosa Mosqueta">
-                        <h3 class="item_name">Rosa<br>Mosqueta</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Procede del molido del fruto completo (cáscara, pulpa y semilla), disecado a bajas temperaturas para preservar la totalidad de sus principio activos.</p>
-                        <p class="precio">$2300</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/Hibiscus.jpg" alt="Hibiscus">
-                        <h3 class="item_name">Hibiscus</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Es originaria de América y África. Se destaca por su llamativo color rojo. También conocida como "Flor de Jamaica". 
-                            Luego de su recolección, se seca para la elaboración de infusiones. </p>
-                        <p class="precio">$1300</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/Manzanilla.jpg" alt="Manzanilla">
-                        <h3 class="item_name">Manzanilla</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Es la opción perfecta para tomar a la noche ya que no contiene cafeína y tiene sabores dulcemente tranquilizantes.</p>
-                        <p class="precio">$800</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/Boldo.jpg" alt="Boldo">
-                        <h3 class="item_name">Boldo</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Desde la época precolombina la medicina popular chilena, el boldo es una de sus plantas medicinales más empleadas.
-                            Es capaz de depurar el hígado de la bilis, ayudando a su vez a eliminar las grasas del organismo</p>
-                        <p class="precio">$600</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/Tilo.jpg" alt="Tilo">
-                        <h3 class="item_name">Tilo</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Los beneficios del tilo son ampliamente aceptados por la medicina natural. Desde hace mucho tiempo se utiliza para aliviar los nervios o el insomnio.</p>
-                        <p class="precio">$600</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
-                <div class="item_container">
-                    <div class="item">
-                        <img class="item_image" src="img/Productos/Melisa.jpg" alt="Melisa">
-                        <h3 class="item_name">Melisa</h3>
-                    </div>
-                    <div class="itemhidden">
-                        <p class="item_description">Es una planta con aroma a limón de la misma familia que la menta. Esta hierba es originaria de Europa, el norte de África y Asia occidental.
-                            Se ha usado tradicionalmente para mejorar el estado de ánimo y la función cognitiva.
-                        </p>
-                        <p class="precio">$1000</p>
-                        <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
-                               
+                <script>
+                    item("img/Productos/Menta.jpg",
+                        "Piperina",
+                        "Mejorar la digestión y disminuir las náuseas son algunas de las bondades que se le atribuyen a esta especia familiar de la hierbabuena.",
+                        "$1800")
+
+                    item("img/Productos/Rosa.jpg",
+                        "Rosa<br>Mosqueta",
+                        "Procede del molido del fruto completo (cáscara, pulpa y semilla), disecado a bajas temperaturas para preservar la totalidad de sus principio activos.",
+                        "$2300")
+
+                    item("img/Productos/Hibiscus.jpg",
+                        "Hibiscus",
+                        'Es originaria de América y África. Se destaca por su llamativo color rojo. También conocida como "Flor de Jamaica". Luego de su recolección, se seca para la elaboración de infusiones.',
+                        "$1300")
+                    
+                    item("img/Productos/Manzanilla.jpg",
+                        "Manzanilla",
+                        "Es la opción perfecta para tomar a la noche ya que no contiene cafeína y tiene sabores dulcemente tranquilizantes.",
+                        "$800")
+                    
+                    item("img/Productos/Boldo.jpg",
+                        "Boldo",
+                        "Desde la época precolombina la medicina popular chilena, el boldo es una de sus plantas medicinales más empleadas. Es capaz de depurar el hígado de la bilis, ayudando a su vez a eliminar las grasas del organismo",
+                        "$600")
+                    
+                    item("img/Productos/Tilo.jpg",
+                        "Tilo",
+                        "Los beneficios del tilo son ampliamente aceptados por la medicina natural. Desde hace mucho tiempo se utiliza para aliviar los nervios o el insomnio.",
+                        "$600")
+                    
+                    item("img/Productos/Melisa.jpg",
+                    "Melisa",
+                    "Es una planta con aroma a limón de la misma familia que la menta. Esta hierba es originaria de Europa, el norte de África y Asia occidental. Se ha usado tradicionalmente para mejorar el estado de ánimo y la función cognitiva.",
+                    "$1000")
+                </script>               
             </div>
             <div class="espaciador"></div> 
         </section>
