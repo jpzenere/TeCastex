@@ -404,13 +404,14 @@ footer a:hover {
     }
 
     .arrow button:hover {
-        color: #28544B;
+        color: #FFD6A0;
     }
  
   
     .itemhidden {
         display: grid;
-        grid-template-rows: 1fr 1.1em 1.1em 4vw;
+        grid-template-rows: 1fr 1.1em 1.1em 4vw 4vw;
+        grid-template-columns: 1fr;
         width: 80vw;
         height: 40vw;
         bottom: 0;
@@ -427,11 +428,6 @@ footer a:hover {
         padding: 0px 15px 3px 15px;
     }
 
-
-    .itemhidden:hover .arrow {
-        display: none
-    }
-
     .precio{
         grid-row: 2/3;
     }
@@ -441,7 +437,14 @@ footer a:hover {
         grid-row: 3/4;
     }
 
+    .arrow_up button {
+        border: none;
+        background-color: white;
+    }
 
+    .arrow_up button:hover {
+        color:#FFD6A0;
+    } 
   
 .prod_container_kit {
     display: flex;
@@ -826,7 +829,7 @@ footer a:hover {
 }
 
 .itemhidden {
-    grid-template-rows: 1fr 1.2em 1.2em 2.2vw;
+    grid-template-rows: 1fr 1.2em 1.2em 2.2vw 2.2vw;
     width: 39vw;
     height: 19.5vw;
 }
@@ -1012,7 +1015,7 @@ footer a:hover {
     .itemhidden {
         width: 25vw;
         height: 12.5vw;
-        grid-template-rows: 1fr 1.3em 1.3em 2.1vw;
+        grid-template-rows: 1fr 1.3em 1.3em 2.1vw 2.1vw;
         top: 2vw;
     }
 

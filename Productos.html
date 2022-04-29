@@ -8,7 +8,7 @@
     <title>Té Castex!</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f56b239c28.js" crossorigin="anonymous"></script>
-
+    <script src="Library.js"></script>
 </head>
 <body>
     <header>
@@ -26,25 +26,7 @@
         <section class="TeTipos">
             <h2 class="Tipos"><a name="Tenegro">Te Negro</a></h2>
             <div class="prod_container">
-                <script>
-                    function item(imagen,name,descr,prec) {
-                        let card = `<div class="item_container">
-                                        <div class="item">
-                                            <img class="item_image" src="${imagen}">
-                                            <h3 class="item_name">${name}</h3>
-                                            <div class="arrow"><button type="button" 
-                                                onclick="document.getElementById('${name}').style.display='grid'">
-                                                <i class="fa-solid fa-chevron-down"></i></button></i>
-                                            </div>
-                                        </div>
-                                        <div class="itemhidden" id="${name}" style="display:none">
-                                            <p class="item_description">${descr}</p>
-                                            <p class="precio">${prec}</p>
-                                            <div><a class="item_button" href="Carrito.html">Comprar</a></div>
-                                        </div>
-                                    </div>`
-                        document.write(card)
-                    }
+                <script>                    
                     item("img/Productos/Assam.jpg",
                         "Assam",
                         "Té Negro de hoja partida y brotes dorados de sabor intenso. Especialmente astringente, ideal para los amantes del té con leche.",
