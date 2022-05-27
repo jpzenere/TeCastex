@@ -49,39 +49,44 @@
             <div class="espaciador"><a name="consulta"></a></div>
             <div class="form_iframe_container">                
                 <section class="form_container">
-                    <h2>Hacenos tu consulta</h2>                    
-                    <form class="form_quienes" action="https://formspree.io/f/xpzbjlpk" method="POST">
-                        <div class="imp_container">                            
-                            <label><span class="span_imp">Nombre:</span>
-                                <input class="imp" type="text" name="nombre" autocapitalize="words" required>
+                    <h2>Hacenos tu consulta</h2>
+                    <div id="error"></div>                    
+                    <form class="form_quienes" id="form" action="https://formspree.io/f/xpzbjlpk" method="POST">
+                        <div class="input_container">                            
+                            <label><span class="span_input">Nombre:</span>
+                                <input class="input" id="nombre" type="text" name="nombre" onkeyup="validarNombre()" autocapitalize="words" required>
+                            </label>
+                            <span class="inputError" id="errorNombre"></span>
+                        </div>
+                        <div class="input_container">
+                            <label><span class="span_input">Apellido:</span>
+                                <input class="input" id="apellido" type="text" name="apellido" onkeyup="validarApellido()" autocapitalize="words" required>
+                            </label>
+                            <span class="inputError" id="errorApellido"></span>
+                        </div>
+                        <div class="input_container">
+                            <label><span class="span_input">E-mail:</span>
+                                <input class="input" id="email" type="email" name="email" onkeyup="validarEmail()" required>
+                            </label>
+                            <span class="inputError" id="errorEmail"></span>
+                        </div>
+                        <div class="input_container">
+                            <label><span class="span_input">Quiero suscribirme al newsletter:</span>
+                                <input class="input" type="checkbox" name="newsletter" value="Suscripto">
                             </label>
                         </div>
-                        <div class="imp_container">
-                            <label><span class="span_imp">Apellido:</span>
-                                <input class="imp" type="text" name="apellido" autocapitalize="words" required>
-                            </label>
-                        </div>
-                        <div class="imp_container">
-                            <label><span class="span_imp">E-mail:</span>
-                                <input class="imp" type="email" name="email" placeholder="Ingresá tu E-mail" required>
-                            </label>
-                        </div>
-                        <div class="imp_container">
-                            <label><span class="span_imp">Quiero suscribirme al newsletter:</span>
-                                <input class="imp" type="checkbox" name="newsletter" value="Suscripto">
-                            </label>
-                        </div>
-                        <div class="imp_container">
+                        <div class="input_container">
                             <label><span class="span_imp">Mensaje:</span>
-                                <textarea class="imp" name="message" placeholder="Escribinos tu mensaje" rows="5" cols="30" autocapitalize="sentences"></textarea>
+                                <textarea class="input" id="mensaje" name="message" onkeyup="validarMensaje()" placeholder="Escribinos tu mensaje" rows="5" cols="30" autocapitalize="sentences"></textarea>
                             </label>
+                            <span class="inputError" id="errorMensaje"></span>
                         </div>
                         <div class="button_container">
-                            <button type="submit" class="imp_button"><span class="span_imp">Enviar</span>
+                            <button type="submit" class="input_button"><span class="span_input">Enviar</span>
                             </button>
                         </div>
                         <div class="button_container">
-                            <button type="reset" class="imp_button"><span class="span_imp">Borrar</span>
+                            <button type="reset" class="input_button"><span class="span_input">Borrar</span>
                             </button>
                         </div> 
                     </form>
@@ -106,5 +111,6 @@
             <p>Desarrollado por: <a type="email" href="mailto:jpzenere@gmail.com"><i>Juan Panozzo Zénere</i> </p></a>
         </div>
     </footer>
+    <script src="funcionalidades.js"></script>
 </body>
 </html>
